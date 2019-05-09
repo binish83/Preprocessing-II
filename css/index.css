@@ -149,6 +149,7 @@ h1 {
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 h4 {
   font-size: 2.5rem;
@@ -167,6 +168,39 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .body {
+    margin: auto;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.navigation h1 {
+  font-size: 3rem;
+}
+.navigation nav {
+  display: flex;
+}
+.navigation nav a {
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .navigation nav a {
+    margin-right: 0px;
+  }
+}
+.img {
+  border-top: 2px dashed #C0C0C0;
+  margin-top: 10px;
 }
 .footer {
   width: 100%;
@@ -188,6 +222,12 @@ img {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -224,4 +264,20 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: white;
+  width: 200px;
+  border-radius: 10px;
+  height: 35px;
+  font-size: 15px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: #17A2B8;
+  border: 2px solid #17A2B8;
 }

@@ -1,4 +1,45 @@
 // Navigation Styles here
+.body{
+    @media @mobile{
+        margin: auto;
+    }
+
+}
 .navigation{
     
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 10px;
+    
+    h1{
+        font-size: 3rem;
+    }
+       
+    nav{
+        display: flex;
+    
+        a{
+            text-decoration: none;
+            margin-right: 10px;
+            margin-left: 10px;
+            color: black;
+            font-size: 1.2rem;
+        
+            @media @mobile {
+            margin-right:0px;
+            }
+
+        } //a
+    } //nav 
+} //navigation
+
+
+
+.img{
+  border-top: 2px dashed @silver;
+  margin-top:10px;
+
 }
+
+
